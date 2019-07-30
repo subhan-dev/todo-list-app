@@ -4,6 +4,7 @@ const isEmail = require('validator/lib/isEmail')
 const bcrypt = require('bcrypt')
 const path = require('path')
 const multer = require('multer')
+const port = require('../config/port')
 
 // __dirname: alamat folder file userRouter.js
 const rootdir = path.join(__dirname,'/../..')
