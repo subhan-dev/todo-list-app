@@ -38,29 +38,6 @@ const upstore = multer(
     }
 )
 
-
-// CREATE ONE USER
-// router.post('/user', (req, res) => {
-//     var {username, name, email, password} = req.body
-
-//     if(!isEmail(email)){
-//         return res.send('Email is not valid')
-//     }
-
-//     password = bcrypt.hashSync(password, 8)
-    
-//     const sql = `INSERT INTO users (username, name, email, password)
-//                 VALUES ( '${username}', '${name}', '${email}', '${password}' )`
-
-//     conn.query(sql, (err, result) => {
-//         if(err){
-//             return res.send(err.sqlMessage)
-//         }
-
-//         res.send(result)
-//     })
-// })
-
 // CREATE ONE USER
 router.post('/users', (req, res) => {
 
